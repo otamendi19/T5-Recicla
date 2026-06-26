@@ -1,70 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTech Challenge</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
+    <title>TecnoVerde N°5</title>
 
-        body{
-            background: linear-gradient(135deg, #2e7d32, #66bb6a);
-            height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .contenedor{
-            background:white;
-            width:80%;
-            max-width:700px;
-            padding:40px;
-            border-radius:20px;
-            text-align:center;
-            box-shadow:0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        h1{
-            color:#2e7d32;
-            margin-bottom:15px;
-        }
-
-        h2{
-            color:#555;
-            margin-bottom:20px;
-        }
-
-        p{
-            color:#666;
-            margin-bottom:30px;
-            line-height:1.6;
-        }
-
-        button{
-            background:#2e7d32;
-            color:white;
-            border:none;
-            padding:15px 30px;
-            font-size:18px;
-            border-radius:10px;
-            cursor:pointer;
-            transition:0.3s;
-        }
-
-        a{
-            text-decoration: none;
-            color: antiquewhite;
-        }
-
-        
-    </style>
 </head>
 
 <body>
@@ -73,22 +18,65 @@
 
         <h1>♻ T5 Recicla</h1>
 
-        <h2>Proyecto de Concientización Ambiental para la Comunidad Educativa de la Escuela Técnica N.º 5</h2>
+        <h2>Registro de jugador</h2>
 
-        <p>
-            Aprendé a cuidar el ambiente mientras jugás. 
-            Poné a prueba tus conocimientos sobre reciclaje, 
-            separación de residuos y sostenibilidad para generar 
-            un impacto positivo en nuestra escuela.
-        </p>
+        <form id="registro">
 
-        <button>
-        <a href="index.html">Comenzar</a>
-        </button>
+            <label for="nombre">Nombre y apellido</label>
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Ingrese su nombre"
+                required
+            >
+
+            <label for="email">Correo electrónico</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="ejemplo@gmail.com"
+                required
+            >
+
+            <label for="curso">Curso</label>
+
+            <select id="curso" required>
+
+                <option value="">Seleccione...</option>
+
+                <option>1° Año</option>
+                <option>2° Año</option>
+                <option>3° Año</option>
+                <option>4° Año</option>
+                <option>5° Año</option>
+                <option>6° Año</option>
+                <option>7° Año</option>
+
+            </select>
+
+            <label for="modalidad">Modalidad</label>
+
+            <select id="modalidad" required>
+
+                <option value="">Seleccione...</option>
+
+                <option>Ciclo Básico</option>
+                <option>Turismo</option>
+                <option>Alimentos</option>
+                <option>Informática</option>
+
+            </select>
+
+            <button type="submit">
+                Ingresar al juego
+            </button>
+
+        </form>
 
     </div>
-            
-        
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
