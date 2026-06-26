@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoSort</title>
+
+    <link rel="stylesheet" href="ecosort.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <a href="juego.html" class="volver">← Menú</a>
+
+    <h1>♻ EcoSort</h1>
+
+</header>
+
+
+<section class="informacion">
+
+    <div class="caja">
+
+        ⭐ Puntaje
+
+        <h3 id="puntaje">0</h3>
+
+    </div>
+
+    <div class="caja progreso">
+
+        <p id="progreso">Residuo 1 de 10</p>
+
+        <div class="barra">
+
+            <div class="relleno" id="barra"></div>
+
+        </div>
+
+    </div>
+
+    <div class="caja">
+
+        👤 Jugador
+
+        <h3 id="jugador"></h3>
+
+    </div>
+
+</section>
+
+
+
+<section class="zonaJuego">
+
+    <h2>
+
+        Arrastrá el residuo al contenedor correspondiente
+
+    </h2>
+
+    <div id="residuo" draggable="true">
+
+        🥤
+
+        <p>Botella plástica</p>
+
+    </div>
+
+</section>
+
+
+
+<section class="tachos">
+
+    <div class="tacho verde" data-tacho="verde">
+
+        <div class="tapa"></div>
+
+        <div class="cuerpo">
+
+            ♻
+
+            <p>Orgánico</p>
+
+        </div>
+
+        <div class="ruedas">
+
+            <div></div>
+
+            <div></div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="tacho azul" data-tacho="azul">
+
+        <div class="tapa"></div>
+
+        <div class="cuerpo">
+
+            ♻
+
+            <p>Papel y Cartón</p>
+
+        </div>
+
+        <div class="ruedas">
+
+            <div></div>
+
+            <div></div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="tacho amarillo" data-tacho="amarillo">
+
+        <div class="tapa"></div>
+
+        <div class="cuerpo">
+
+            ♻
+
+            <p>Plásticos</p>
+
+        </div>
+
+        <div class="ruedas">
+
+            <div></div>
+
+            <div></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+💡 Consejo:
+Observá bien cada residuo antes de clasificarlo.
+
+</footer>
+
+
+<script src="ecosort.js"></script>
+
+</body>
+
+</html>

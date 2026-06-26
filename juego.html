@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>T5 Recicla</title>
+
+    
+    <script src="juego.js"></script>
+    <style>
+        *{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+body{
+
+    background:linear-gradient(135deg,#2E7D32,#81C784);
+
+    min-height:100vh;
+
+}
+
+header{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:white;
+
+}
+
+header h1{
+
+    font-size:42px;
+
+}
+
+header p{
+
+    margin-top:10px;
+
+    font-size:20px;
+
+}
+
+main{
+
+    width:90%;
+
+    margin:auto;
+
+}
+
+main h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:white;
+
+}
+
+.contenedorTarjetas{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.tarjeta{
+
+    width:300px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.tarjeta:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.icono{
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+}
+
+.tarjeta h3{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}
+
+.tarjeta p{
+
+    color:#555;
+
+    line-height:1.5;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>♻ EcoTécnica</h1>
+
+    <p id="bienvenida"></p>
+
+</header>
+
+<main>
+
+    <h2>Elegí un desafío</h2>
+
+    <div class="contenedorTarjetas">
+
+        <div class="tarjeta" onclick="abrirJuego('ecosort')">
+
+            <div class="icono">♻</div>
+
+            <h3>EcoSort</h3>
+
+            <p>
+                Clasificá correctamente los residuos en su contenedor.
+            </p>
+            
+
+        </div>
+
+        <div class="tarjeta" onclick="abrirJuego('ecoquiz')">
+
+            <div class="icono">🧠</div>
+
+            <h3>EcoPreguntas</h3>
+
+            <p>
+                Respondé preguntas sobre reciclaje.
+            </p>
+
+        </div>
+
+        <div class="tarjeta" onclick="abrirJuego('ecodetective')">
+
+            <div class="icono">🔎</div>
+
+            <h3>EcoBúsqueda</h3>
+
+            <p>
+                Encontrá los errores ambientales escondidos en la escuela.
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+</body>
+</html>
