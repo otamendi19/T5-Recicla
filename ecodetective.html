@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoBúsqueda</title>
+
+    <link rel="stylesheet" href="ecodetective.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <a href="juego.html" class="volver">← Menú</a>
+
+    <h1>🔎 EcoBúsqueda</h1>
+
+    <p id="jugador"></p>
+
+</header>
+
+<section class="info">
+
+    <div>
+
+        Problemas encontrados
+
+        <h2 id="contador">0 / 3</h2>
+
+    </div>
+
+    <div>
+
+        Puntaje
+
+        <h2 id="puntaje">0</h2>
+
+    </div>
+
+</section>
+
+<h2 class="titulo">
+
+Encontrá todos los problemas ambientales.
+
+</h2>
+
+<div class="escena">
+
+    <img src="C:\Users\kiara\Desktop\Visual\Proyecto_Ambiente\aula.png">
+
+    <!-- Luz prendida -->
+    <div class="error luz"
+    onclick="encontrar(this,'💡 Las luces deben apagarse cuando no se utilizan.')">
+    </div>
+
+    <!-- Papel -->
+
+    <div class="error papel"
+    onclick="encontrar(this,'📄 Los residuos deben colocarse en el tacho correspondiente.')">
+    </div>
+
+    <!-- Botella -->
+
+    <div class="error botella"
+    onclick="encontrar(this,'🥤 Una botella no debe quedar tirada en el piso.')">
+    </div>
+
+    <!-- Computadora -->
+
+    <div class="error pc"
+    onclick="encontrar(this,'💻 Las computadoras deben apagarse cuando no se usan.')">
+    </div>
+
+    <!-- Canilla -->
+
+    <div class="error agua"
+    onclick="encontrar(this,'🚰 Cerrar la canilla evita desperdiciar agua.')">
+    </div>
+
+</div>
+
+<div id="mensaje">
+
+EcoBot te dará pistas...
+
+</div>
+
+<script src="ecodetective.js"></script>
+
+</body>
+
+</html>

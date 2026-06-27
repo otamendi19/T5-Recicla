@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoTécnica | EcoPreguntas</title>
+
+    <link rel="stylesheet" href="ecoquiz.css">
+    
+
+</head>
+
+<body>
+
+
+
+<header>
+
+    <a href="juego.html" class="volver">← Menú</a>
+
+    <h1>🧠 EcoPreguntas</h1>
+
+    <p id="jugador"></p>
+
+</header>
+
+<section class="informacion">
+
+    <div class="caja">
+
+        ⭐ Puntaje
+
+        <h2 id="puntaje">0</h2>
+
+    </div>
+
+    <div class="caja">
+
+        <p id="progreso">Pregunta 1 de 10</p>
+
+        <div class="barra">
+
+            <div class="relleno" id="barra"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="pregunta">
+
+    <h2 id="textoPregunta">
+
+        Cargando pregunta...
+
+    </h2>
+
+</section>
+
+<section class="respuestas">
+
+    <button class="opcion" onclick="responder(0)"></button>
+
+    <button class="opcion" onclick="responder(1)"></button>
+
+    <button class="opcion" onclick="responder(2)"></button>
+
+    <button class="opcion" onclick="responder(3)"></button>
+
+</section>
+
+<section id="explicacion">
+
+</section>
+
+<script src="ecoquiez.js"></script>
+<script src="ecorobot.js"></script>
+
+</body>
+
+</html>

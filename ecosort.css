@@ -1,393 +1,344 @@
 *{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-
-background:linear-gradient(#d9fdd3,#98d87b);
-
-min-height:100vh;
-
+    background:linear-gradient(#d9fdd3,#98d87b);
+    min-height:100vh;
 }
 
-
-/* HEADER */
+/* ================= HEADER ================= */
 
 header{
-
-background:#166534;
-
-color:white;
-
-padding:20px;
-
-text-align:center;
-
-position:relative;
-
+    background:#166534;
+    color:white;
+    padding:20px;
+    text-align:center;
+    position:relative;
 }
 
 .volver{
-
-position:absolute;
-
-left:20px;
-
-top:25px;
-
-background:white;
-
-color:#166534;
-
-padding:10px 18px;
-
-border-radius:10px;
-
-text-decoration:none;
-
-font-weight:bold;
-
+    position:absolute;
+    left:20px;
+    top:25px;
+    background:white;
+    color:#166534;
+    padding:10px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 header h1{
-
-font-size:45px;
-
+    font-size:clamp(30px,5vw,45px);
 }
 
 header h2{
-
-margin-top:10px;
-
+    margin-top:10px;
+    font-size:clamp(18px,3vw,24px);
 }
 
-
-
-/* INFORMACIÓN */
+/* ================= INFORMACIÓN ================= */
 
 .informacion{
-
-display:flex;
-
-justify-content:center;
-
-gap:30px;
-
-padding:25px;
-
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:25px;
+    flex-wrap:wrap;
 }
 
 .caja{
-
-background:#166534;
-
-color:white;
-
-width:240px;
-
-padding:20px;
-
-border-radius:15px;
-
-text-align:center;
-
-box-shadow:0 5px 10px rgba(0,0,0,.2);
-
+    background:#166534;
+    color:white;
+    flex:1;
+    min-width:220px;
+    max-width:260px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
 }
 
 .caja h3{
-
-margin-top:10px;
-
-font-size:30px;
-
+    margin-top:10px;
+    font-size:clamp(24px,4vw,30px);
 }
 
 .barra{
-
-height:18px;
-
-background:white;
-
-border-radius:20px;
-
-margin-top:15px;
-
-overflow:hidden;
-
+    height:18px;
+    background:white;
+    border-radius:20px;
+    margin-top:15px;
+    overflow:hidden;
 }
 
 .relleno{
-
-width:10%;
-
-height:100%;
-
-background:#7CFC00;
-
+    width:10%;
+    height:100%;
+    background:#7CFC00;
 }
 
-
-
-/* ZONA JUEGO */
+/* ================= JUEGO ================= */
 
 .zonaJuego{
-
-text-align:center;
-
-margin-top:30px;
-
+    text-align:center;
+    margin-top:30px;
 }
 
 .zonaJuego h2{
-
-margin-bottom:30px;
-
-color:#1e3a1e;
-
+    margin-bottom:30px;
+    color:#1e3a1e;
+    font-size:clamp(22px,4vw,32px);
 }
 
 #residuo{
-
-width:180px;
-
-height:180px;
-
-margin:auto;
-
-background:white;
-
-border-radius:25px;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:90px;
-
-box-shadow:0 10px 20px rgba(0,0,0,.2);
-
-cursor:grab;
-
-transition:.3s;
-
+    width:180px;
+    height:180px;
+    margin:auto;
+    background:white;
+    border-radius:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:90px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+    cursor:grab;
+    transition:.3s;
 }
 
 #residuo:hover{
-
-transform:scale(1.05);
-
+    transform:scale(1.05);
 }
 
 #residuo p{
-
-font-size:20px;
-
-margin-top:10px;
-
+    font-size:20px;
+    margin-top:10px;
 }
 
-
-
-/* TACHOS */
+/* ================= TACHOS ================= */
 
 .tachos{
-
-display:flex;
-
-justify-content:center;
-
-gap:80px;
-
-margin-top:60px;
-
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-top:60px;
+    flex-wrap:wrap;
 }
 
 .tacho{
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-cursor:pointer;
-
-transition:.3s;
-
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .tacho:hover{
-
-transform:translateY(-10px);
-
+    transform:translateY(-10px);
 }
 
 .tapa{
-
-width:170px;
-
-height:22px;
-
-border-radius:12px;
-
+    width:170px;
+    height:22px;
+    border-radius:12px;
 }
 
 .cuerpo{
-
-width:150px;
-
-height:190px;
-
-border-radius:10px 10px 25px 25px;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:60px;
-
-font-weight:bold;
-
-color:white;
-
+    width:150px;
+    height:190px;
+    border-radius:10px 10px 25px 25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
+    font-weight:bold;
+    color:white;
 }
 
 .verde .tapa,
 .verde .cuerpo{
-
-background:#2E7D32;
-
+    background:#2E7D32;
 }
 
 .azul .tapa,
 .azul .cuerpo{
-
-background:#1565C0;
-
+    background:#1565C0;
 }
 
 .amarillo .tapa,
 .amarillo .cuerpo{
-
-background:#F9A825;
-
+    background:#F9A825;
 }
 
 .cuerpo p{
-
-font-size:18px;
-
-margin-top:15px;
-
-text-align:center;
-
-padding:5px;
-
+    font-size:18px;
+    margin-top:15px;
+    text-align:center;
+    padding:5px;
 }
 
 .ruedas{
-
-display:flex;
-
-justify-content:space-between;
-
-width:150px;
-
-margin-top:-5px;
-
+    display:flex;
+    justify-content:space-between;
+    width:150px;
+    margin-top:-5px;
 }
 
 .ruedas div{
-
-width:18px;
-
-height:18px;
-
-background:#333;
-
-border-radius:50%;
-
+    width:18px;
+    height:18px;
+    background:#333;
+    border-radius:50%;
 }
 
-
-
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
-
-margin:50px auto;
-
-width:650px;
-
-background:#166534;
-
-color:white;
-
-padding:18px;
-
-border-radius:15px;
-
-text-align:center;
-
-font-size:18px;
-
+    width:90%;
+    max-width:650px;
+    margin:50px auto;
+    background:#166534;
+    color:white;
+    padding:18px;
+    border-radius:15px;
+    text-align:center;
+    font-size:18px;
 }
 
-/* ========================= */
-/* ANIMACIÓN DE ERROR */
-/* ========================= */
+/* ================= ANIMACIÓN ERROR ================= */
 
 .shake{
-
-    animation: sacudir .5s;
-
+    animation:sacudir .5s;
 }
 
 @keyframes sacudir{
 
-    0%{
-        transform: translateX(0);
+    0%{transform:translateX(0);}
+    20%{transform:translateX(-10px);}
+    40%{transform:translateX(10px);}
+    60%{transform:translateX(-10px);}
+    80%{transform:translateX(10px);}
+    100%{transform:translateX(0);}
+
+}
+
+.error{
+    background:#d32f2f !important;
+    transition:.3s;
+}
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media(max-width:900px){
+
+    .tachos{
+        gap:30px;
     }
 
-    20%{
-        transform: translateX(-10px);
+    .tapa{
+        width:150px;
     }
 
-    40%{
-        transform: translateX(10px);
+    .cuerpo{
+        width:135px;
+        height:175px;
+        font-size:50px;
     }
 
-    60%{
-        transform: translateX(-10px);
-    }
-
-    80%{
-        transform: translateX(10px);
-    }
-
-    100%{
-        transform: translateX(0);
+    .ruedas{
+        width:135px;
     }
 
 }
-.error{
 
-    background:#d32f2f !important;
+/* ========================================= */
+/* CELULARES */
+/* ========================================= */
 
-    transition:.3s;
+@media(max-width:768px){
+
+    header{
+        padding-top:70px;
+    }
+
+    .volver{
+        top:15px;
+        left:15px;
+        font-size:14px;
+        padding:8px 14px;
+    }
+
+    .informacion{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .caja{
+        width:90%;
+        max-width:350px;
+    }
+
+    #residuo{
+        width:140px;
+        height:140px;
+        font-size:70px;
+    }
+
+    #residuo p{
+        font-size:16px;
+    }
+
+    .tachos{
+        gap:25px;
+    }
+
+    .tapa{
+        width:120px;
+        height:18px;
+    }
+
+    .cuerpo{
+        width:110px;
+        height:145px;
+        font-size:42px;
+    }
+
+    .cuerpo p{
+        font-size:14px;
+    }
+
+    .ruedas{
+        width:110px;
+    }
+
+    .ruedas div{
+        width:14px;
+        height:14px;
+    }
+
+    footer{
+        font-size:15px;
+    }
+
+}
+
+/* ========================================= */
+/* CELULARES PEQUEÑOS */
+/* ========================================= */
+
+@media(max-width:480px){
+
+    .tachos{
+        flex-direction:column;
+        align-items:center;
+    }
 
 }

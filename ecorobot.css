@@ -1,0 +1,116 @@
+/* ========================= */
+/* ECOBOT */
+/* ========================= */
+
+#ecobot{
+
+    position:fixed;
+
+    left:10px;
+
+    bottom:20px;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:15px;
+
+    z-index:999;
+
+}
+
+#ecobot img{
+
+    width:280px;
+
+    animation:flotar 3s infinite ease-in-out;
+
+
+}
+
+.globo{
+
+    background:white;
+
+    border:3px solid #43A047;
+
+    border-radius:20px;
+
+    padding:15px;
+
+    width:260px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+    position: fixed;
+
+    bottom: 200px;
+
+    left: 120px;
+
+}
+
+.globo::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-18px;
+
+    left:40px;
+
+    border-width:10px;
+
+    border-style:solid;
+
+    border-color:white transparent transparent transparent;
+
+}
+
+#mensajeEcoBot{
+
+    color:#2E7D32;
+
+    font-weight:bold;
+
+    line-height:1.5;
+
+}
+
+
+@keyframes flotar{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+/*HTML:
+
+<div id="ecobot">
+
+    <div class="globo">
+
+        <p id="mensajeEcoBot"></p>
+
+    </div>
+
+    <img src="C:\Users\kiara\Desktop\Visual\Proyecto_Ambiente\ecobot.png" alt="EcoBot">
+
+</div>*/

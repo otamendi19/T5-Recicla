@@ -20,7 +20,6 @@ formulario.addEventListener("submit", function(event){
 
     window.location.href= "juego.html";
 
-    // En el futuro cambiarás esta línea para ir al juego.
-    // window.location.href = "juego.html";
+
 
 });
